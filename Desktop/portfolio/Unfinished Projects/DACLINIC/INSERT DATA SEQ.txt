@@ -1,0 +1,57 @@
+---PATIENT---
+INSERT INTO PATIENT VALUES(patient_seq.nextval, 'Kier', 'Naval', 'F', 19, 'M', 'Baras, Canaman, Camarines Sur', '639312343263', 'Student', 'Single');
+INSERT INTO PATIENT VALUES(patient_seq.nextval, 'Kalvin', 'Noora', 'Z', 33, 'M', 'Sta. Cruz, Canaman, Camarines Sur', 4732211, 'Teacher', 'Single');
+INSERT INTO PATIENT VALUES(patient_seq.nextval, 'John', 'Ruiz', 'R', 27, 'M', 'Mango Street, Sta. Cruz, Naga City', 639981245412, 'Construction worker', 'Married');
+INSERT INTO PATIENT VALUES(patient_seq.nextval, 'Dominic', 'Amo', 'Q', 55, 'M', 'Mother Francesca Street, Penafrancia, Naga City', 8814433, 'Security Guard', 'Separated');
+INSERT INTO PATIENT VALUES(patient_seq.nextval, 'Clarisse', 'Fullante', 'S', 48, 'F', 'Tapas Puro, Balatas, Naga City',639876517590 , 'Lawyer', 'Married');
+
+---DOCTOR---
+INSERT INTO DOCTOR VALUES(doctors_seq.nextval, 'Gracia Patria', 'Antonio', 'D', 'DMD', 800.00, 32415718, 60264833);
+INSERT INTO DOCTOR VALUES(doctors_seq.nextval, 'Miriam Elvira', 'Daluro', 'M', 'MD', 800.00, 43546576, 32143254);
+
+---APPOINTMENT---
+INSERT INTO APPOINTMENT VALUES(appointment_seq.nextval, NULL, '12-dec-16', 'colds', 800.00, 1000000, 20);
+INSERT INTO APPOINTMENT VALUES(appointment_seq.nextval, NULL, '12-dec-16', 'tooth ache', 4500.00, 1000001, 10);
+INSERT INTO APPOINTMENT VALUES(appointment_seq.nextval, NULL, '13-dec-16', 'colds', 800.00, 1000002, 20);
+INSERT INTO APPOINTMENT VALUES(appointment_seq.nextval, NULL, '13-dec-16', 'fever', 800.00, 1000003, 20);
+INSERT INTO APPOINTMENT VALUES(appointment_seq.nextval, NULL, '13-dec-16', 'headache', 800.00, 1000004, 20);
+
+---OPERATION---
+INSERT INTO OPERATION VALUES(operations_seq.nextval, 'Teeth Cleaning', 1500);
+INSERT INTO OPERATION VALUES(operations_seq.nextval, 'Tooth Extraction', 1200);
+INSERT INTO OPERATION VALUES(operations_seq.nextval, 'Dental Filling', 350);
+INSERT INTO OPERATION VALUES(operations_seq.nextval, 'Teeth Whitening', 1500);
+INSERT INTO OPERATION VALUES(operations_seq.nextval, 'Wisdom Tooth Extraction', 3000);
+
+---PRESCRIPTION---
+INSERT INTO PRESCRIPTION VALUES(prescription_seq.nextval, '1000000', '2000000', '20');
+INSERT INTO PRESCRIPTION VALUES(prescription_seq.nextval, '1000001', '2000001', '20');
+INSERT INTO PRESCRIPTION VALUES(prescription_seq.nextval, '1000002', '2000002', '10');
+INSERT INTO PRESCRIPTION VALUES(prescription_seq.nextval, '1000003', '2000003', '10');
+INSERT INTO PRESCRIPTION VALUES(prescription_seq.nextval, '1000004', '2000004', '10');
+
+---ACCOUNTS PAYABLE---
+INSERT INTO ACCOUNTS_PAYABLE VALUES(accounts_payable_seq.nextval, '12-DEC-16', 300.00, 500.00, 1000000, 2000000);
+INSERT INTO ACCOUNTS_PAYABLE VALUES(accounts_payable_seq.nextval, '14-DEC-16', 1400.00, 3100.00, 1000001, 2000001);
+INSERT INTO ACCOUNTS_PAYABLE VALUES(accounts_payable_seq.nextval, '13-DEC-16', 100.00, 700.00,  1000002, 2000002);
+INSERT INTO ACCOUNTS_PAYABLE VALUES(accounts_payable_seq.nextval, '13-DEC-16', 800.00, 000.00,  1000003, 2000003);
+INSERT INTO ACCOUNTS_PAYABLE VALUES(accounts_payable_seq.nextval, '13-DEC-16', 200.00, 600.00,  1000004, 2000004);
+
+---OPERATION_DONE---
+insert into operation_done values(2000001, 100);
+insert into operation_done values(2000001, 110);
+insert into operation_done values(2000001, 120);
+insert into operation_done values(2000004, 100);
+insert into operation_done values(2000004, 140);
+
+---PRESCRIPTION_GD---
+INSERT INTO prescription_gd values(3000000, 'ibuprofen', '3x a day');
+INSERT INTO prescription_gd values(3000000, 'paracetamol', 'every 6 hrs');
+INSERT INTO prescription_gd values(3000001, 'mefanamic acid', '4x a day');
+INSERT INTO prescription_gd values(3000001, 'erythromycin', 'every 12 hrs');
+INSERT INTO prescription_gd values(3000002, 'phenylephrine', '2x a day');
+INSERT INTO prescription_gd values(3000002, 'oxymetazoline', '6x a day');
+INSERT INTO prescription_gd values(3000003, 'paracetamol', '2x a day');
+INSERT INTO prescription_gd values(3000003, 'aspirin', 'every 4 hrs');
+INSERT INTO prescription_gd values(3000004, 'ibuprofen', '3x a day');
+INSERT INTO prescription_gd values(3000004, 'acetaminiphen', 'every 8 hrs');

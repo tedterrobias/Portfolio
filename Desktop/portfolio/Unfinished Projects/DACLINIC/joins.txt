@@ -1,0 +1,14 @@
+patients
+-patient info (patient table)
+
+appointments
+-patient id, lname, fname, appointment_id, date, complain, diagnosis, referred medical practitioner, appointment fee.
+
+prescription
+-patient id, lname, fname, app_id, app.date, prescription id, medicine name, dosage.
+
+accounts payable
+-patient id, lname, fname, receipt number, date, paid amount, balance
+
+operations done
+patient id, lname, fname, operation id, operation type, price

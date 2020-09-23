@@ -1,0 +1,27 @@
+CREATE OR REPLACE USER secretary
+IDENTIFIED BY  sec
+GRANT SELECT ON DACLINIC TO secretary;
+
+CREATE USER secretary
+IDENTIFIED BY sec;
+
+CREATE OR REPLACE ROLE admin
+
+GRANT select, update, insert on patient, appointment to admin
+
+GRANT admin to secretary
+GRANT select, update, insert on appointment to admin
+GRANT select, update, insert on patient to admin
+CREATE USER doctor1
+IDENTIFIED BY doc1;
+
+CREATE USER doctor2
+IDENTIFIED BY doc2;
+
+CREATE OR REPLACE ROLE user
+
+GRANT all privilege on patient to user
+GRANT all privilege on appointment to user
+
+GRANT user to doctor1
+GRANT user to doctor2
